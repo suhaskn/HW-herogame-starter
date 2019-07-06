@@ -41,5 +41,23 @@ function equipWeapon(hero) {
 function resetHealth() {
     
     hero.health = 10;
+    displayDetails();
+
+}
+
+
+function displayDetails() {
+
+    document.getElementById('name').innerText = `${hero.name}`;
+    document.getElementById('weapon').innerText = `${hero.weapon.type}`;
+    document.getElementById('health').innerText = `${hero.health}`;
+    document.getElementById('damage').innerText = `${hero.weapon.damage}`;
+
+}
+
+function changeHero() {
+
+    hero.name = document.getElementById('yourhero').value;
+    displayDetails();
 
 }

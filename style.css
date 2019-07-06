@@ -8,3 +8,18 @@ img {
     height: 140px;
 
 }
+
+#main {
+    
+    width :15%;
+    height : 150;
+}
+#content {
+    float : left;
+    width :40%;
+}
+
+#result {
+    float : right;
+    width :60%;
+}
